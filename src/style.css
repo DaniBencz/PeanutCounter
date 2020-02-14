@@ -7,7 +7,7 @@ body{
 
 #app{
   background: whitesmoke;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   padding: 10px;
 }
@@ -23,4 +23,8 @@ body{
   height: 20px;
   width: 50px;
   background: white;
+}
+
+.navlink{
+  margin: 5px;
 }
