@@ -1,0 +1,19 @@
+
+initialise project and install react and reactDOM
+
+create index.html as a template
+create index.js
+create .css file and import it in index.js
+install .css dependencies (package.json)
+
+install webpack as per the dependecies
+configure webpack.config.js: .js, .jsx, and .css loaders, .html template, bundling, dev server, etc.
+
+install babel as per dependencies
+configure .babelrc
+
+insatll react-router-dom
+configure
+
+install redux
+configure
