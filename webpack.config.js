@@ -7,10 +7,11 @@ module.exports = {
     path: path.join(__dirname, '/bundle'),
     filename: 'index_bundle.js'
   },
-  /* devServer: {  // optional
-    inline: true,
-    port: 8001
-  }, */
+  devServer: {  // optional
+    historyApiFallback: true
+    /* inline: true,
+    port: 8001 */
+  },
   module: {
     rules: [
       {

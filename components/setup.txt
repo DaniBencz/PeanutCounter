@@ -13,7 +13,7 @@ install babel as per dependencies
 configure .babelrc
 
 insatll react-router-dom
-configure
+configure webpack
 
 install redux
 configure

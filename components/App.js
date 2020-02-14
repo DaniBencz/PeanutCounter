@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-// import Navigation from './Navigation'
+import Navigation from './Navigation'
 
 import Hello from './Hello'
 import NoRd from './NoRd'
@@ -13,18 +13,14 @@ class App extends Component {
 
    render() {
       return (
-         <div>
-            <BrowserRouter>
-               {/* <Navigation></Navigation> */}
-               <div>
-                  <Route path="/"><Hello/></Route>
-                  {/* <Route path="/about" component={NoRd} /> */}
-                  <Route path="/about"><NoRd></NoRd></Route>
-                  <Route component={Error} />
-               </div>
-            </BrowserRouter>
-            {/* <NoRd></NoRd> */}
-         </div>
+         <BrowserRouter>
+            <Navigation />
+            <Switch> {/* Switch makes sure only one path gets displayed at once */}
+               <Route path='/' exact component={Hello} /> {/* will render first matching route */}
+               <Route path='/states' component={NoRd} />
+               <Route component={Error} />
+            </Switch>
+         </BrowserRouter>
       )
    }
 }
