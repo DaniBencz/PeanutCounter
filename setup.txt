@@ -15,5 +15,5 @@ configure .babelrc
 insatll react-router-dom
 configure webpack
 
-install redux
+install redux, react-redux, redux-devtools
 configure
