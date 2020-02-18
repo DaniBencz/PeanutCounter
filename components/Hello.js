@@ -3,7 +3,7 @@
 import React from 'react'
 
 const Hello = () => (
-  <p>Hello World</p>
+  <p>Hello Peanuts!</p>
 );
 
 export default Hello
