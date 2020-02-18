@@ -6,21 +6,21 @@ import Display from './Dispaly'
 
 class NoRd extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { peanuts: 0 };
-    this.buyPeanut = this.buyPeanut.bind(this);
-    this.eatPeanut = this.eatPeanut.bind(this);
-    this.keyStroke = this.keyStroke.bind(this);
+    super(props)
+    this.state = { peanuts: 0 }
+    this.buyPeanut = this.buyPeanut.bind(this)
+    this.eatPeanut = this.eatPeanut.bind(this)
+    this.keyStroke = this.keyStroke.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener('keydown', this.keyStroke);
+    window.addEventListener('keydown', this.keyStroke)
   }
 
   keyStroke(e) {
     if (e.keyCode === 38) {
       console.log('up')
-      this.buyPeanut();
+      this.buyPeanut()
     } else if (e.keyCode === 40) {
       console.log('down')
       this.eatPeanut()
@@ -38,17 +38,17 @@ class NoRd extends React.Component {
 
   eatPeanut(e) {
     if (this.state.peanuts > 1) {
-      //this.setState({ peanuts: this.state.peanuts - 1 }, () => { this.myCallback() });
+      //this.setState({ peanuts: this.state.peanuts - 1 }, () => { this.myCallback() })
       //prevState is for linear execution
       this.setState(prevState => ({ peanuts: prevState.peanuts - 1 }))
     }
-    //console.log(this.state.peanuts);
+    //console.log(this.state.peanuts)
   }
 
   render() {
     return (
       <div className='inner'>
-        <p>State App</p>
+        <p>Regular State</p>
         <Button change={this.buyPeanut} text="Get one" />
         {/* containment */}
         <Display>{this.state.peanuts}</Display>
@@ -58,4 +58,4 @@ class NoRd extends React.Component {
   }
 }
 
-export default NoRd;
+export default NoRd
