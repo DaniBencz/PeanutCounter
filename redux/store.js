@@ -6,4 +6,5 @@ import rootReducer from './rootReducer'
 
 const store = createStore(rootReducer, composeWithDevTools())
 
+//exports to keyRegister
 export default store

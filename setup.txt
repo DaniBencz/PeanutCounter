@@ -1,19 +1,19 @@
 
-initialise project and install react and reactDOM
+initialise project, install react, reactDOM
 
 create index.html as a template
 create index.js
 create .css file and import it in index.js
 install .css dependencies (package.json)
 
-install webpack (webpack, webpack-dev-server)
+install webpack, webpack-dev-server, webpack-cli, html-webpack-plugin (all dev)
 configure webpack.config.js: .js, .jsx, and .css loaders, .html template, bundling, dev server, etc.
 
-install babel as per dependencies
+install @babel/core, @babel/preset-env, @babel/preset-react, babel-loader (all dev)
 configure .babelrc
 
-insatll react-router-dom
-configure webpack
+install react-router-dom
+configure webpack: histroryApiFallback
 
-install redux, react-redux, redux-devtools
+install redux, react-redux, redux-devtools(dev)
 configure
