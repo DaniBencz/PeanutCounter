@@ -15,5 +15,5 @@ configure .babelrc
 install react-router-dom
 configure webpack: histroryApiFallback
 
-install redux, react-redux, redux-devtools(dev)
+install redux, react-redux, redux-devtools(-extension?)(dev)
 configure

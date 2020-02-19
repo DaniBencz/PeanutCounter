@@ -14,7 +14,7 @@ class App extends Component {
 
    render() {
       return (
-         <BrowserRouter>
+         <div>
             <Navigation />
             <Switch> {/* Switch makes sure only one path gets displayed at once */}
                <Route path='/' exact component={Hello} /> {/* will render first matching route */}
@@ -22,7 +22,7 @@ class App extends Component {
                <Route path='/redux' component={Rd} />
                <Route component={Error} />
             </Switch>
-         </BrowserRouter>
+         </div>
       )
    }
 }

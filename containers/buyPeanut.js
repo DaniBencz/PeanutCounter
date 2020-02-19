@@ -18,10 +18,10 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-const BuyAcorn = connect(
+const BuyPeanut = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Button);
 
 //exports to Rd
-export default BuyAcorn;
+export default BuyPeanut
