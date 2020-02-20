@@ -1,7 +1,7 @@
 'use strict'
 
 import { connect } from 'react-redux'
-import { buyAction } from '../redux/actions'
+import { eatAction } from '../redux/actions'
 import Button from '../components/Button'
 
 const mapStateToProps = () => {
@@ -13,7 +13,7 @@ const mapStateToProps = () => {
 const mapDispatchToProps = (dispatch) => {
   return {
     change: () => {
-      dispatch(buyAction(1))
+      dispatch(eatAction(1))
     }
   }
 }

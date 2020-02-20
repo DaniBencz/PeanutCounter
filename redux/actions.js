@@ -4,15 +4,15 @@
 // as a function's return value, we can pass on parameters
 const buyAction = value => {
   return {
-    type: 'INCREASE_ACORNS',
-    acorn: value
+    type: 'INCREASE_PEANUTS',
+    peanut: value
   }
 }
 
 const eatAction = value => {
   return {
-    type: 'DECREASE_ACORNS',
-    acorn: value
+    type: 'DECREASE_PEANUTS',
+    peanut: value
   }
 }
 
