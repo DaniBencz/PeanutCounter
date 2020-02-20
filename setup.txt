@@ -16,4 +16,4 @@ install react-router-dom
 configure webpack: histroryApiFallback
 
 install redux, react-redux, redux-devtools(-extension?)(dev)
-configure
+configure store, reducers, actions, containers, Provider

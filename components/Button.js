@@ -3,7 +3,7 @@
 import React from 'react'
 
 const Button = props => {
-  const { change, text } = props;
+  const { change, text } = props
   return <button onClick={change}>{text}</button>
 }
 

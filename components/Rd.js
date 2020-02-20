@@ -3,16 +3,16 @@
 import React from 'react'
 import KeyEventRegister from '../containers/keyRegister'
 import BuyPeanut from '../containers/buyPeanut'
-//import Display from '../containers/display'
-//import EatPeanut from '../containers/eatPeanut'
+import DispCont from '../containers/displayCont'
+import EatPeanut from '../containers/eatPeanut'
 
 const Rd = () => (
   <div className='inner'>
     <p>Redux App</p>
     <KeyEventRegister />
     <BuyPeanut />
-    {/* <Display />
-    <EatPeanut /> */}
+    <DispCont />
+    <EatPeanut />
   </div>
 );
 //exports to app
