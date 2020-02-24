@@ -10,14 +10,14 @@ class NoRd extends React.Component {
     this.state = { peanuts: 0 }
     this.buyPeanut = this.buyPeanut.bind(this)
     this.eatPeanut = this.eatPeanut.bind(this)
-    this.keyStroke = this.keyStroke.bind(this)
+    // this.keyStroke = this.keyStroke.bind(this)
   }
 
   componentDidMount() {
     window.addEventListener('keydown', this.keyStroke)
   }
 
-  keyStroke(e) {   //using => to skip manual binding
+  keyStroke = e => {   //using => to skip manual binding
     if (e.keyCode === 38) {
       console.log('up')
       this.buyPeanut()

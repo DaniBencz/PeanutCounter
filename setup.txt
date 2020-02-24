@@ -9,7 +9,7 @@ install .css dependencies (package.json)
 install webpack, webpack-dev-server, webpack-cli, html-webpack-plugin (all dev)
 configure webpack.config.js: .js, .jsx, and .css loaders, .html template, bundling, dev server, etc.
 
-install @babel/core, @babel/preset-env, @babel/preset-react, babel-loader (all dev)
+install @babel/core, @babel/preset-env, @babel/preset-react, babel-loader, @babel/plugin-proposal-class-properties (all dev)
 configure .babelrc
 
 install react-router-dom
