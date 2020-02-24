@@ -7,5 +7,4 @@ const rootReducer = combineReducers({
   peanutReducer
 })
 
-//exports to store
-export default rootReducer
+export default rootReducer  // to store

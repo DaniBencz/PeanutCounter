@@ -23,5 +23,4 @@ const BuyPeanut = connect(
   mapDispatchToProps
 )(Button)
 
-//exports to Rd
-export default BuyPeanut
+export default BuyPeanut  //to Rd

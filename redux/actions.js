@@ -16,5 +16,4 @@ const eatAction = value => {
   }
 }
 
-//exports to buyPeanut, eatPeanut, keyRegister
-export { buyAction, eatAction }
+export { buyAction, eatAction } // to buyPeanut, eatPeanut, keyRegister

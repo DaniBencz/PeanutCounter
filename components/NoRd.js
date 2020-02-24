@@ -17,7 +17,7 @@ class NoRd extends React.Component {
     window.addEventListener('keydown', this.keyStroke)
   }
 
-  keyStroke(e) {
+  keyStroke(e) {   //using => to skip manual binding
     if (e.keyCode === 38) {
       console.log('up')
       this.buyPeanut()
@@ -27,7 +27,6 @@ class NoRd extends React.Component {
     }
   }
 
-  //using => to skip manual binding need further dependencies
   buyPeanut(e) {
     this.setState(prevState => ({ peanuts: prevState.peanuts + 1 }))
   }
@@ -42,7 +41,6 @@ class NoRd extends React.Component {
       //prevState is for linear execution
       this.setState(prevState => ({ peanuts: prevState.peanuts - 1 }))
     }
-    //console.log(this.state.peanuts)
   }
 
   render() {
@@ -51,7 +49,7 @@ class NoRd extends React.Component {
         <p>Regular State</p>
         <Button change={this.buyPeanut} text="Get one" />
         {/* containment */}
-        <Display>{this.state.peanuts}</Display>
+        <Display peanuts={this.state.peanuts} />
         <Button change={this.eatPeanut} text="Take one" />
       </div>
     )

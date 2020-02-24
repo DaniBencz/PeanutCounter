@@ -4,7 +4,7 @@ const initState = {
   peanuts: 0
 }
 
-function peanutReducer(state = initState, action) {
+const peanutReducer = (state = initState, action) => {
   if (action.type === 'INCREASE_PEANUTS') {
     return {
       ...state,
@@ -18,5 +18,4 @@ function peanutReducer(state = initState, action) {
   return state
 }
 
-//export to rootReducer
-export default peanutReducer
+export default peanutReducer  // to rootReducer

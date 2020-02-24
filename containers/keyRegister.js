@@ -7,13 +7,12 @@ import { buyAction } from '../redux/actions'
 import { eatAction } from '../redux/actions'
 
 class KeyEventRegister extends React.Component {
-  //don't need props, but inheritence dictates it
-  constructor(props){
+
+  constructor(props){ //don't need props, but inheritence dictates it
     super(props)
     this.keyStroke = this.keyStroke.bind(this)
   }
-  render() {
-    //we don't render anything
+  render() {  //we don't render anything
     return null
   }
   componentDidMount() {
@@ -33,5 +32,4 @@ class KeyEventRegister extends React.Component {
   }
 }
 
-//exports to Rd
-export default KeyEventRegister
+export default KeyEventRegister // to Rd
