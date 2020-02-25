@@ -17,6 +17,10 @@ class NoRd extends React.Component {
     window.addEventListener('keydown', this.keyStroke)
   }
 
+  componentWillUnmount(){
+    window.removeEventListener('keydown', this.keyStroke)
+  }
+
   keyStroke = e => {   //using => to skip manual binding
     if (e.keyCode === 38) {
       console.log('up')
@@ -31,7 +35,7 @@ class NoRd extends React.Component {
     this.setState(prevState => ({ peanuts: prevState.peanuts + 1 }))
   }
 
-  myCallback() {
+  myCallback = () => {
     console.log('state is set')
   }
 
@@ -39,7 +43,11 @@ class NoRd extends React.Component {
     if (this.state.peanuts > 1) {
       //this.setState({ peanuts: this.state.peanuts - 1 }, () => { this.myCallback() })
       //prevState is for linear execution
-      this.setState(prevState => ({ peanuts: prevState.peanuts - 1 }))
+      //this.setState(prevState => ({ peanuts: prevState.peanuts - 1 }))
+      this.setState(prevState => {
+        this.myCallback()
+        return { peanuts: prevState.peanuts - 1 }
+      })
     }
   }
 

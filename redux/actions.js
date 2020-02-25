@@ -1,9 +1,7 @@
 'use strict'
 
-// actions must be plain objects, but
-// as a function's return value, we can pass on parameters
-const buyAction = value => {
-  return {
+const buyAction = value => {  // using action creators, parameters can be passed
+  return {  // actions are plain objects
     type: 'INCREASE_PEANUTS',
     peanut: value
   }
