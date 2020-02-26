@@ -5,7 +5,7 @@ const initState = {
 }
 
 const peanutReducer = (state = initState, action) => {
-  if (action.type === 'INCREASE_PEANUTS') {
+  if (action.type === 'INCREASE_PEANUTS') { // reducers could be named individually, according to respective actions
     return {
       ...state,
       peanuts: state.peanuts + action.peanut,

@@ -14,6 +14,6 @@ const Rd = () => (
     <DispCont />
     <EatPeanut />
   </div>
-);
-//exports to app
-export default Rd
+)
+
+export default Rd // to App

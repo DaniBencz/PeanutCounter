@@ -7,8 +7,8 @@ import Button from '../components/Button'
 const mapStateToProps = () => {
   return {
     text: 'Eat one'
-  };
-};
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -17,11 +17,6 @@ const mapDispatchToProps = (dispatch) => {
     }
   }
 }
-
-/* const Button = props => {
-  const { change, text } = props
-  return <button onClick={change}>{text}</button>
-} */
 
 const EatPeanut = connect(
   mapStateToProps,

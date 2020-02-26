@@ -13,5 +13,4 @@ const DispCont = connect(
   mapStateToProps
 )(Display)
 
-// exports to Rd.js
-export default DispCont
+export default DispCont // to Rd.js

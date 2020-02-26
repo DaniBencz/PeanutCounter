@@ -6,4 +6,4 @@ const Hello = () => (
   <p>Hello Peanuts!</p>
 )
 
-export default Hello
+export default Hello  // to App
