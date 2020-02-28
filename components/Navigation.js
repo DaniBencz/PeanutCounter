@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 
 const Navigation = () => (
   <div>
-    <NavLink className='navlink' to="/">Home</NavLink>
-    <NavLink className='navlink' to="/states">States</NavLink>
-    <NavLink className='navlink' to="/redux">Redux</NavLink>
+    <NavLink className='navlink' activeClassName='selected' exact to="/">Home</NavLink>
+    <NavLink className='navlink' activeClassName='selected' to="/states">States</NavLink>
+    <NavLink className='navlink' activeClassName='selected' to="/redux">Redux</NavLink>
   </div>
 )
 

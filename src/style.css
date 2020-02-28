@@ -28,3 +28,7 @@ body{
 .navlink{
   margin: 5px;
 }
+
+.selected{
+  background-color: bisque;
+}
